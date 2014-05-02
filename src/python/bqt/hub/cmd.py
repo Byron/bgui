@@ -1,6 +1,6 @@
 #-*-coding:utf-8-*-
 """
-@package bcore.gui.hub.cmd
+@package bqt.hub.cmd
 @brief Misc utilities related to the hub
 
 @copyright 2013 Sebastian Thiel
@@ -8,7 +8,7 @@
 __all__ = ['HubGUICommand']
 
 
-from bcore.gui.cmd import PySideGUICommandBase
+from ..cmd import PySideGUICommandBase
 from .controller import HubController
 
 

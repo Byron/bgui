@@ -1,6 +1,6 @@
 #-*-coding:utf-8-*-
 """
-@package bcore.gui.hub.interfaces
+@package bqt.hub.interfaces
 @brief A collection of interfaces to help using and customizing the hub
 
 @copyright 2013 Sebastian Thiel

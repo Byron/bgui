@@ -1,17 +1,15 @@
 #-*-coding:utf-8-*-
 """
-@package bcore.gui.widgets.plugin_selector
+@package bqt.widgets.plugin_selector
 @brief Contains a widget to help selecting plugins providing a certain interface
 
 @copyright 2013 Sebastian Thiel
 """
 __all__ = ['PluginSelectorWidget']
 
-from PySide import (
-                        QtGui,
-                        QtCore,
-                    )
-from . import ui
+from bqt.mod import ( QtGui,
+                      QtCore )
+from . import res
 
 
 class PluginSelectorWidget(QtGui.QWidget):
@@ -27,7 +25,7 @@ class PluginSelectorWidget(QtGui.QWidget):
         """Initialize this instance"""
         super(PluginSelectorWidget, self).__init__(*args)
         self._plugins = list()
-        self.ui = ui.Ui_SelectorWidget()
+        self.ui = res.Ui_SelectorWidget()
         self.ui.setupUi(self)
         self.ui.plugins.currentIndexChanged.connect(self._on_current_index_change)
         

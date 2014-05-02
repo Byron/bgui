@@ -1,6 +1,6 @@
 #-*-coding:utf-8-*-
 """
-@package bcore.gui.utility
+@package bqt.utility
 @brief Misc utilities for use with GUIs
 
 @copyright 2013 Sebastian Thiel

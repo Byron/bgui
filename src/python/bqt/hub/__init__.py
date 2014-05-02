@@ -1,6 +1,6 @@
 #-*-coding:utf-8-*-
 """
-@package bcore.gui.hub
+@package bqt.hub
 @brief Main hub package, which provides a dashboard like gui
 
 @copyright 2013 Sebastian Thiel

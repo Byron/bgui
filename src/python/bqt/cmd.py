@@ -1,6 +1,6 @@
 #-*-coding:utf-8-*-
 """
-@package bcore.gui.cmd
+@package bqt.cmd
 @brief A base class for simplifying qt gui applications 
 
 @copyright 2013 Sebastian Thiel
@@ -9,10 +9,8 @@ __all__ = ['PySideGUICommandBase']
 
 import sys
 
-from bcore.cmd import CommandBase
-
-import bcore
-from PySide import QtGui
+from bcmd import CommandBase
+import bqt.mod.QtGui as QtGui
 
 
 class PySideGUICommandBase(CommandBase):
@@ -27,7 +25,7 @@ class PySideGUICommandBase(CommandBase):
         """Initialize a qt application object
         @return newly initialized object"""
         # NOTE: for now we ignore the actual args
-        pinfo = new_service(bcore.IPostLaunchProcessInformation)
+        pinfo = self.application().process_information()
         return QtGui.QApplication([str(pinfo.executable())], QtGui.QApplication.Type.GuiClient)
     
     def execute(self, args, remaining_args):
