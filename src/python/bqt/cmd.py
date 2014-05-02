@@ -10,8 +10,9 @@ __all__ = ['PySideGUICommandBase']
 import sys
 
 from bcmd import CommandBase
-import bqt.mod.QtGui as QtGui
-
+import bqt
+QtGui = bqt.mod.QtGui
+assert QtGui
 
 class PySideGUICommandBase(CommandBase):
     """A command to initialize the pipeline context and setup a QApplication

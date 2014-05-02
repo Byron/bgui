@@ -1,0 +1,16 @@
+packages:
+  ########
+  bqt: ##
+  ######
+    # NOTE: trees is to be set in distribution
+    name: BeCute
+    description: |
+      A simple qt abstraction layer, and repository for generalized widgets
+    url: https://github.com/Byron/bqt
+    requires:
+      # these requirements are to be defined in the distribution
+      - pyside
+      - bcore
+    environment:
+      variables:
+        PYTHONPATH: src/python
