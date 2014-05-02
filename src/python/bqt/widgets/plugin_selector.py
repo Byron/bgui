@@ -7,8 +7,10 @@
 """
 __all__ = ['PluginSelectorWidget']
 
-from bqt.mod import ( QtGui,
-                      QtCore )
+import bqt
+QtGui = bqt.get.QtGui
+QtCore = bqt.get.QtCore
+
 from . import res
 
 

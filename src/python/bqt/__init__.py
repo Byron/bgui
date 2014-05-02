@@ -40,7 +40,7 @@ class ModuleProxy(object):
         
 
 
-mod = ModuleProxy(('PySide', 'PyQT'))
+get = ModuleProxy(('PySide', 'PyQT'))
 
 from .cmd import *
 from .utility import *

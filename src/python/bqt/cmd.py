@@ -11,8 +11,7 @@ import sys
 
 from bcmd import CommandBase
 import bqt
-QtGui = bqt.mod.QtGui
-assert QtGui
+QtGui = bqt.get.QtGui
 
 class PySideGUICommandBase(CommandBase):
     """A command to initialize the pipeline context and setup a QApplication
