@@ -14,3 +14,17 @@ packages:
     environment:
       variables:
         PYTHONPATH: src/python
+  beg-qt:
+    requires: bqt
+  bcmdg-qt:
+    requires: bqt
+  bprocessg-qt:
+    requires: bqt
+  beg-qt-exec:
+    # client must define a package called e.g 'beg', which requires this package and defines an alias
+    # for starting it. We just define the startup code
+    arguments:
+      prepend:
+        - -m
+        - beg.qt
+  
