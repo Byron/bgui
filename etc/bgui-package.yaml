@@ -2,7 +2,8 @@ packages:
   ########
   bqt: ##
   ######
-    # NOTE: trees is to be set in distribution
+    trees:
+      - '{settings-files.bgui-package.dirname}/..'
     name: BeCute
     description: |
       A simple qt abstraction layer, and repository for generalized widgets
