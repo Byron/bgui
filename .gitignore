@@ -2,4 +2,8 @@
 *~
 *.sublime-workspace
 
-doc/
+/doc/
+/pages/
+/build/
+/dist/
+/sdist/

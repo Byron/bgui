@@ -1,0 +1,18 @@
+site_name: bgui
+site_url: https://byron.github.io/bgui
+site_description: Write applications with graphical user interfaces
+
+repo_url: https://github.com/Byron/bgui
+dev_addr: 127.0.0.1:9991
+
+docs_dir: ../../src/md
+site_dir: ../../doc/mkdocs/html
+
+pages:
+- ['index.md', 'Home']
+- ['beg.md', 'Features', 'beg - be with graphics']
+- ['license.md', 'About', 'License']
+
+theme: yeti
+
+copyright: Copyright &copy; 2014, <a href="https://www.linkedin.com/in/sebastianthiel">Sebastian Thiel & Contributors</a>.

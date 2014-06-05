@@ -3,7 +3,7 @@ packages:
   bqt: ##
   ######
     trees:
-      - '{settings-files.bgui-package.dirname}/..'
+      - '{yaml.bgui-package.dirname}/..'
     name: BeCute
     description: |
       A simple qt abstraction layer, and repository for generalized widgets
